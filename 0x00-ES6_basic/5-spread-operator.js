@@ -1,3 +1,3 @@
 export default function concatArrays(array1, array2, string) {
-    return  [...array1, ...array2, 'H', 'e', 'l', 'l', 'o'];
+    return([...array1, ...array2, 'H', 'e', 'l', 'l', 'o']);
 }
