@@ -1,3 +1,3 @@
 export default function uploadPhoto(filename) {
-    return Promise.reject(new Error(`{$filename} cannot be replaced`));
+    return Promise.reject(new Error(`${filename} cannot be replaced`));
 }
