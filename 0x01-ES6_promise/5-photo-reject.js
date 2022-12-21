@@ -5,3 +5,8 @@ export default function uploadPhoto(filename) {
         );
     });
 }
+
+uploadPhoto('image.jpg')
+.catch((error) => {
+    console.log(error.message)
+})
