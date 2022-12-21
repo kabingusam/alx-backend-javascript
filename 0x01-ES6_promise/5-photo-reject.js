@@ -6,7 +6,7 @@ export default function uploadPhoto(filename) {
     });
 }
 
-uploadPhoto('image.jpg')
+uploadPhoto()
 .catch((error) => {
     console.log(error.message)
 })
