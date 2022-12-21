@@ -1,5 +1,5 @@
 export default function uploadPhoto(filename) {
-    return new Promise((resolve, reject) => {
+    return new Promise((reject) => {
         reject(
             new Error(`{$filename} cannot be replaced`)
         );
