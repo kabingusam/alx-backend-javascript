@@ -1,4 +1,4 @@
-function getResponseFromAPI(success) {
+export function getResponseFromAPI(success) {
     return new Promise((resolve, reject) => {
         if(success){
             resolve({
