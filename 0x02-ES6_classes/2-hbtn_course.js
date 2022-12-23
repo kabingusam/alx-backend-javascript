@@ -1,17 +1,7 @@
+/*  Represents class HolbertonCourse
+*/
 class HolbertonCourse {
     constructor(name, length, students) {
-        if (typeof(name) !== String){
-            throw new TypeError('name must be string');
-        }
-        if (typeof(length) != Number){
-            throw new TypeError('length must be a number');
-        }
-        if (!Array.isArray(students)){
-            throw new TypeError('students must be an array');
-        }
-        if (!students.every(student => typeof student === 'string')){
-            throw new TypeError('students must be an array of strings')
-        }
         this._name = name;
         this._length = length;
         this._students = students;
