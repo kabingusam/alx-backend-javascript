@@ -68,21 +68,99 @@
 //           proper had a GDP of   ${gdp}  , and a GDP per capita of   ${budget.capita}  .`);
 // }
 
-function handleResponseFromAPI(promise) {
-   const promise = new Promise((resolve, reject) => {
-    if(promise = true) {
-        resolve({
-            status: 200,
-            body: 'Success'
-        })
-    } else {
-        reject({
+// function handleResponseFromAPI(promise) {
+//    const promise = new Promise((resolve, reject) => {
+//     if(promise = true) {
+//         resolve({
+//             status: 200,
+//             body: 'Success'
+//         })
+//     } else {
+//         reject({
 
-        })
-    }
-   }) 
-}
+//         })
+//     }
+//    }) 
+// }
 
-handleResponseFromAPI(Promise).then(() => {
-    console.log('Got a response from the API');
-})
+// handleResponseFromAPI(Promise).then(() => {
+//     console.log('Got a response from the API');
+// })
+
+const companies =  [
+    { name: 'company one', category: 'tech', start: 2001, end: 2003 },
+    { name: 'company two', category: 'finance', start: 2001, end: 2008 },
+    { name: 'company three', category: 'agri', start: 2006, end: 2009 },
+];
+
+const ages = [12, 23, 34, 56, 67, 78];
+
+// for (i = 0; i < companies.length; i++ ){
+//     console.log(companies[i]);
+// }
+
+// companies.forEach(function(company){
+//     console.log(company);
+
+// });
+
+// let canDrink = []
+// for(let i = 0; i < ages.length; i++ ){
+//     if(ages[i] >= 21) {
+//         canDrink.push(ages[i]);
+//     }
+// }
+
+// console.log(canDrink);
+
+// const canDrink = ages.filter(function(age){
+//     if(age >= 21){
+//         return true
+//     } 
+// });
+
+// const canDrink = ages.filter(age => age >= 21);
+// console.log(canDrink);
+
+// const techCompaines =  companies.filter(function(company){
+//     if(company.category === 'tech'){
+//         return true
+//     }
+// })
+
+// const techCompaines = companies.filter(company => company.category === 'tech')
+
+// console.log(techCompaines)
+
+// Create an array of company names 
+
+// const companyNames = companies.map((company => company.name, `[${company.start} - ${company.end}]`));
+// console.log(companyNames);
+
+// const testMap = companies.map(function(company) {
+//     return `${company.name}, [${company.start} - ${company.end}]`
+// }
+// );
+
+
+// const testMap = companies.map(company => `${company.name}, [${company.start} - ${company.end}]`);
+// console.log(testMap);
+
+// const ageSquareRoot = ages
+// .map(age => Math.sqrt(age))
+// .map(age => age * 2);
+// console.log(ageSquareRoot);
+
+// const sortedCompanies  =  companies.sort((a, b) => (a.start > b.start) ? 1 : -1);
+// console.log(sortedCompanies);
+
+// const sortAges =  ages.sort((a, b ) => a - b);
+// console.log(sortAges);
+
+const ageSum = ages.reduce((total, age) => total + age, 0);
+
+console.log(ageSum);
+
+const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+
+console.log(totalYears);
