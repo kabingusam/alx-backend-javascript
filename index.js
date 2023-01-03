@@ -157,10 +157,22 @@ const ages = [12, 23, 34, 56, 67, 78];
 // const sortAges =  ages.sort((a, b ) => a - b);
 // console.log(sortAges);
 
-const ageSum = ages.reduce((total, age) => total + age, 0);
+// const ageSum = ages.reduce((total, age) => total + age, 0);
 
-console.log(ageSum);
+// console.log(ageSum);
 
-const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+// const totalYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
 
-console.log(totalYears);
+// console.log(totalYears);
+
+
+// Typed arrays
+
+// let buffer = new ArrayBuffer(16);
+
+// let dv1 = new DataView(buffer)
+// let dv2 = new DataView(buffer, 10, 3)
+
+// dv1.setInt8(11, 42);
+// let num = dv2.getInt8(1);
+// console.log(num);
