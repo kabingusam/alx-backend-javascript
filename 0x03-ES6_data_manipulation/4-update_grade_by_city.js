@@ -1,7 +1,7 @@
 export default function updateStudentGradeByCity(students, city, newGrades) {
     const defaultGrade = { grade: 'N/A' };
 
-    if (students instanceof Array) {
+    if (!Array.isArray(students)) {
         return students
             .filter((student) => student.location === city)
             .map((student) => ({
