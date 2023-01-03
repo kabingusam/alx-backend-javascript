@@ -176,3 +176,18 @@ const ages = [12, 23, 34, 56, 67, 78];
 // dv1.setInt8(11, 42);
 // let num = dv2.getInt8(1);
 // console.log(num);
+
+
+
+// weakset
+
+// let carWeakSet = new WeakSet();
+
+// let car1 = {
+//     make: 'Honda',
+//     model: 'Civic'
+// }
+
+// carWeakSet.add(car1);
+
+// console.log(carWeakSet);
