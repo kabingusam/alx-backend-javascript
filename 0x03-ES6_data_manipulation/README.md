@@ -8,7 +8,7 @@ This folder consists of concepts on data manipulation in ES6.
 ### Table of Contents
 ***
 
-* [0](./0-get_list_students.js)
+* [0-get_list_students.js](./0-get_list_students.js)
 
 * [1-make_classrooms.js](./1-get_list_student_ids.js/)
 

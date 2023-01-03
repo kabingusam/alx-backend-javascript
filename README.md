@@ -13,6 +13,8 @@
 
 * [0x02-ES6_classes](./0x02-ES6_classes/)
 
+* [0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation/)
+
 
 ### Authors & Contributers:
 *kabingu Sammy* - [Github](https://github.com/kabingusam) || [twitter](https://twitter.com/Kabingusammy)
